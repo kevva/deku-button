@@ -7,14 +7,17 @@ const propTypes = {
 	},
 	onClick: {
 		type: 'function'
+	},
+	type: {
+		type: 'string'
 	}
 };
 
 function render({props}) {
-	const {children, onClick} = props;
+	const {children, onClick, type} = props;
 
 	return (
-		<button class={['Button', props.class]} onClick={onClick}>
+		<button class={['Button', props.class]} onClick={onClick} type={type}>
 			{children}
 		</button>
 	);
