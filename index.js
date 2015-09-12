@@ -5,6 +5,12 @@ const propTypes = {
 	class: {
 		type: 'string'
 	},
+	disabled: {
+		type: 'boolean'
+	},
+	name: {
+		type: 'string'
+	},
 	onClick: {
 		type: 'function'
 	},
@@ -14,10 +20,10 @@ const propTypes = {
 };
 
 function render({props}) {
-	const {children, onClick, type} = props;
+	const {children, disabled, name, onClick, type} = props;
 
 	return (
-		<button class={['Button', props.class]} onClick={onClick} type={type}>
+		<button class={['Button', props.class]} disabled={disabled} name={name} onClick={onClick} type={type}>
 			{children}
 		</button>
 	);
