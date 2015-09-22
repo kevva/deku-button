@@ -1,4 +1,4 @@
-# deku-button
+# deku-button [![Build Status](https://travis-ci.org/kevva/deku-button.svg?branch=master)](https://travis-ci.org/kevva/deku-button)
 
 > Button component for deku
 
