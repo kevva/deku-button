@@ -23,7 +23,8 @@
   "keywords": [
     "button",
     "component",
-    "deku"
+    "deku",
+    "deku-component"
   ],
   "dependencies": {
     "magic-virtual-element": "^1.0.4"
