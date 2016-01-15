@@ -15,18 +15,20 @@ $ npm install --save deku-button
 ```js
 import Button from 'deku-button';
 
-function handle(e) {
+const handleClick = e => {
 	console.log(e.target.className);
 	//=> 'Button'
-}
+};
 
-export function render() {
+const render = () => {
 	return (
-		<Button onClick={handle}>
+		<Button onClick={handleClick}>
 			Click me!
 		</Button>
 	);
-}
+};
+
+export default {render};
 ```
 
 

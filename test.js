@@ -1,10 +1,10 @@
 import assertElement from 'assert-element';
 import componentMock from 'component-mock';
 import test from 'ava';
-import Button from './';
+import m from './dist';
 
 test(t => {
-	const mock = componentMock(Button);
+	const mock = componentMock(m);
 	const el = mock.render({props: {
 		class: 'Button--primary',
 		disabled: true

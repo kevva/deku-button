@@ -19,7 +19,7 @@ const propTypes = {
 	}
 };
 
-function render({props}) {
+const render = ({props}) => {
 	const {children, disabled, name, onClick, type} = props;
 
 	return (
@@ -27,6 +27,6 @@ function render({props}) {
 			{children}
 		</button>
 	);
-}
+};
 
 export default {propTypes, render};

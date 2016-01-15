@@ -13,8 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "prepublish": "babel index.js --out-file dist.js",
-    "test": "./node_modules/.bin/eslint index.js test.js && ava test.js"
+    "prepublish": "babel --out-file dist.js index.js",
+    "test": "./node_modules/.bin/eslint index.js test.js && ava"
   },
   "main": "dist.js",
   "files": [
