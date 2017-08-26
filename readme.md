@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save deku-button
+$ npm install deku-button
 ```
 
 
@@ -20,13 +20,11 @@ const handleClick = e => {
 	//=> 'Button'
 };
 
-const render = () => {
-	return (
-		<Button onClick={handleClick}>
-			Click me!
-		</Button>
-	);
-};
+const render = () => (
+	<Button onClick={handleClick}>
+		Click me!
+	</Button>
+);
 
 export default {render};
 ```
@@ -34,4 +32,4 @@ export default {render};
 
 ## License
 
-MIT © [Kevin Mårtensson](http://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
