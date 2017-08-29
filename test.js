@@ -25,3 +25,8 @@ test('passes props when passed in', () => {
 	assertElement.hasClass(m, 'Foo');
 	assertElement.hasAttribute(m, 'foo', 'bar');
 });
+
+test('has Button class', () => {
+	const m = mock.render();
+	assertElement.hasClass(m, 'Button');
+});
